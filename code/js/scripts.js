@@ -15,9 +15,20 @@ $(document).ready(() => {
     const displayResult = document.getElementById('result');
     const playButton = document.getElementById('play');
     const possibleChoices = ['rock', 'paper', 'scissors'];
+
+    const choices = getElementsByName('Choices');
+    
+    choices.forEach((c) => {
+        c.addEventListener('click', () => {
+            playButton.disabled = false;
+        });
+    });
+
     
 
 });
+
+
 //     // Calculate rolls
 // const calculateScore = (die1, die2) => {
 //     if (die1 === 1 || die2 === 1) {
