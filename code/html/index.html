@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors Game</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.icon">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="../js/scripts.js" defer="defer"></script>
+</head>
+
+<body>
+    <main>
+        <div id="wrapper">
+            <div id="game-container">
+                <h2>Computer Choice: <span id="computer-choice"></span></h2>
+                <h2>Your Choice: <span id="user-choice"></span></h2>
+                <h2>Result: <span id="result"></span></h2>
+                <input type="radio" id="rock" name="choice" value="rock">
+                <label for="rock">Rock</label><br>
+                <input type="radio" id="paper" name="choice" value="paper">
+                <label for="paper">Paper</label><br>
+                <input type="radio" id="scissors" name="choice" value="scissors">
+                <label for="scissors">Scissors</label>
+                <button id="play" disabled>Play</button>
+            </div>
+            
+
+            <div class="popup" id="winner-popup">
+                <div class="popup-content">
+                    <span class="close-btn" id="close-popup">&times;</span>
+                    <h2 id="popup-message"></h2>
+                </div>
+            </div>
+          </div>
+    </main>
+</body>
+</html>
