@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors Game</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.icon">
+    <link rel="stylesheet" type="text/css" href="../css/stylesV2.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="../js/scriptsV2.js" defer="defer"></script>
+</head>
+
+<body>
+    <main>
+        <div id="wrapper">
+            <div id="game-container">
+                <section class="game">
+                    <!--Title -->
+                    <h1 class="title">Rock Paper Scissors</h1>
+                     
+                      <!--Display Score of player and computer -->
+                    <div class="score">  
+                        <div class="playerScore">
+                            <h2>Player</h2>
+                            <p class="p-count count">0</p>
+             
+                        </div>       
+                        <div class="computerScore">
+                            <h2>Computer</h2>
+                            <p class="c-count count">0</p>
+                        </div>
+                    </div>
+                   
+                    <h2 class="move">Choose your move</h2>
+                     
+                      <!--Number of moves left before game ends -->
+                    <h3 class="movesleft">Moves Left: 10 </h3>
+                     
+                      <!--Options available to player to play game -->
+                    <div class="options">
+                        <button id="rock">Rock</button>
+                        <button id="paper">Paper</button>
+                        <button id="scissor">Scissors</button>    
+                    </div>
+                     
+                      <!--Final result of game -->
+                    <div class="result"></div>
+                     
+                      <!--Reload the game -->
+                    <button class="reload"></button>
+             
+                </section>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
